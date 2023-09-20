@@ -1,0 +1,183 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  background-color: #00c6ac;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 700px;
+  padding: 5px;
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: inherit;
+  height: inherit;
+}
+
+.playlist > * {
+  width: 85%;
+  margin: auto;
+}
+
+.playlist__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.playlist__header > .playlist__close-button {
+  position: absolute;
+  left: 0;
+}
+
+.playlist__music {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.playlist__music-image > .playlist__music-background {
+  background-color: #ffbc13;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 108px;
+  height: 108px;
+  border: 2px solid;
+  border-radius: 10%;
+}
+
+.playlist__music-background {
+  width: 48px;
+  height: 48px;
+  border: 2px solid;
+  border-radius: 20%;
+}
+
+.playlist__music-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.playlist__music-title {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 100%;
+}
+
+.playlist__singer {
+  font-weight: 700;
+}
+
+.playlist__media-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+
+.playlist__play,
+.playlist__like,
+.playlist__add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  border: 2px solid;
+  border-radius: 10px;
+  box-shadow: 0 3px 0 0;
+}
+
+ion-icon[name="close-outline"] {
+  font-size: 32px;
+}
+
+ion-icon[name="image-outline"] {
+  font-size: 48px;
+}
+
+ion-icon {
+  font-size: 32px;
+}
+
+.playlist__play {
+  width: 130px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.playlist__like,
+.playlist__add {
+  width: 48px;
+  border-radius: 50%;
+}
+
+.music-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  padding: 10px 0 30px 0;
+}
+
+.music-list__music {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.music-list__music:nth-child(1) .playlist__music-background {
+  background-color: #f2b0b9;
+}
+
+.music-list__music:nth-child(2) .playlist__music-background {
+  background-color: #eed883;
+}
+
+.music-list__music:nth-child(3) .playlist__music-background {
+  background-color: #d3675a;
+}
+
+.music-list__music:nth-child(4) .playlist__music-background {
+  background-color: #5f74ab;
+}
+
+.music-list__title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+}
+
+.music-list__singer {
+  font-size: 16px;
+}
