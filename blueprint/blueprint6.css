@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+button {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  border: none;
+  width: 320px;
+  height: 50px;
+  padding: 0 20px 0 20px;
+  border-radius: 40px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #bebebe;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.container,
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 360px;
+  margin: auto;
+}
+
+.main {
+  gap: 30px;
+}
+
+.header {
+  background-color: #ffce32;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: inherit;
+  height: 90px;
+  padding: 10px 15px 35px 15px;
+  font-size: 20px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: inherit;
+  position: relative;
+  padding: 70px 20px 0 20px;
+}
+
+.main__search {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: -25px;
+}
+
+.main__search > i {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  color: #bebebe;
+}
+
+.main__book-of-the-day,
+.main__top-adventures,
+.main__popular-authors {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.main__book-container {
+  display: flex;
+  gap: 20px;
+}
+
+.main__book-cover > img {
+  width: 110px;
+  box-shadow: 0 0 1px;
+}
+
+.main__book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  position: relative;
+}
+
+.main__book-info > h3 {
+  font-size: 1.2em;
+}
+
+.main__book-author {
+  font-size: 0.8em;
+  color: #979797;
+}
+
+.main__book-star {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.main__book-tag {
+  padding-top: 5px;
+}
+
+.main__book-tag > button {
+  background-color: #e6e6e6;
+  font-size: 14px;
+}
+
+.main__book-button {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 20px 0 0 10px;
+}
+
+.main__book-button > button:nth-child(2) {
+  background-color: #ffce32;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.main__top-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-x: scroll;
+}
+
+.main__top-book {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.main__top-book > img {
+  width: 80px;
+  height: 120px;
+  box-shadow: 0 0 1px;
+}
+
+.main__top-book i {
+  font-size: 0.5em;
+}
+
+.main__author-container {
+  display: flex;
+  gap: 10px;
+}
+
+.main__author-container > img {
+  width: 130px;
+}
+
+.main__author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main__author-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.main__author-content {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: normal;
+}
