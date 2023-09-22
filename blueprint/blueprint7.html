@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./blueprint7.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="section__left">
+        <header class="header__menu">
+          <div class="header__back">
+            <i class="fas fa-arrow-left"></i>
+          </div>
+          <div class="header__search">
+            <i class="fas fa-search"></i>
+          </div>
+        </header>
+
+        <div class="artist__container">
+          <div class="artist__info">
+            <div class="artist__image">
+              <img src="../img/artist-image.jpg" alt="artist-image" />
+            </div>
+            <div class="artist__name">
+              <h1>Charlie Puth</h1>
+            </div>
+            <div class="artist__genre">Pop, R&B</div>
+          </div>
+
+          <div class="artist__button">
+            <button class="artist__button-shuffle">Shuffle</button>
+            <button class="artist__button-like">
+              <i class="fas fa-heart"></i>
+              <span>212,971</span>
+            </button>
+          </div>
+
+          <ul class="artist__music-list">
+            <li class="artist__music-info">
+              <div class="artist__music-cover">
+                <img src="../img/artist-cover1.jpg" alt="" />
+              </div>
+              <div class="artist__text">
+                <div class="artist__music-artist">Charlie Puth</div>
+                <div class="artist__music-title">That's Not How This Works</div>
+              </div>
+              <div class="artist__music-menu">
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+            </li>
+
+            <li class="artist__music-info">
+              <div class="artist__music-cover">
+                <div class="icon-background">
+                  <i class="fas fa-align-right fa-lg fa-rotate-90"></i>
+                </div>
+                <img src="../img/artist-cover2.jpg" alt="" />
+              </div>
+              <div class="artist__text">
+                <div class="artist__music-artist">Charlie Puth</div>
+                <div class="artist__music-title">Dangerously</div>
+              </div>
+              <div class="artist__music-menu">
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+            </li>
+
+            <li class="artist__music-info">
+              <div class="artist__music-cover">
+                <img src="../img/artist-cover2.jpg" alt="" />
+              </div>
+              <div class="artist__text">
+                <div class="artist__music-artist">Charlie Puth</div>
+                <div class="artist__music-title">We Don't Talk Anymore</div>
+              </div>
+              <div class="artist__music-menu">
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+            </li>
+
+            <li class="artist__music-info">
+              <div class="artist__music-cover">
+                <img src="../img/artist-cover3.jpg" alt="" />
+              </div>
+              <div class="artist__text">
+                <div class="artist__music-artist">Charlie Puth</div>
+                <div class="artist__music-title">How Long</div>
+              </div>
+              <div class="artist__music-menu">
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="player__container">
+          <div class="player__text">
+            <div class="player__music-artist">Charlie Puth</div>
+            <div class="player__music-title">Dangerously</div>
+          </div>
+          <div class="player__media">
+            <div class="player__backward-button">
+              <i class="fas fa-step-backward"></i>
+            </div>
+            <div class="player__pause-button">
+              <i class="fas fa-pause"></i>
+            </div>
+            <div class="player__forward-button">
+              <i class="fas fa-step-forward"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__right">
+        <header class="header__menu">
+          <div class="header__back">
+            <i class="fas fa-arrow-left"></i>
+          </div>
+          <div class="header__ellipsis-menu">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </header>
+        <div class="player__main-cover">
+          <div class="background"></div>
+          <img src="../img/artist-cover2.jpg" alt="" />
+        </div>
+
+        <div class="player__text-info">
+          <h1 class="player__title">Dangerously</h1>
+          <span class="player__artist">Charlie Puth</span>
+        </div>
+        <div class="player__progress">
+          <div class="player__time">
+            <div class="player__start">2:01</div>
+            <div class="player__end">3:20</div>
+          </div>
+
+          <div class="player__progress-container">
+            <div class="player__progress-bar"></div>
+            <div class="player__progress-circle"></div>
+          </div>
+
+          <div class="player__control-panel">
+            <div class="player__repeat">
+              <i class="fas fa-sync-alt"></i>
+            </div>
+            <div class="player__backward">
+              <i class="fas fa-step-backward"></i>
+            </div>
+            <div class="player__play">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <div class="player__forward">
+              <i class="fas fa-step-forward"></i>
+            </div>
+            <div class="player__random">
+              <i class="fas fa-random"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <p>Image courtesy of <a href="https://www.youtube.com/@charlieputh" target="_blank">Charlie Puth Official Youtube</a>, <a href="https://music.youtube.com/channel/UCQ-ygxSFSlq-O2zGnXxELXQ?si=cPHXlgsjpti19nLw">Youtube Music</a></p>
+      </footer>
+    </main>
+  </body>
+</html>
