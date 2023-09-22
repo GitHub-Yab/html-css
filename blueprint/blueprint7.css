@@ -324,6 +324,7 @@ main {
   z-index: 1;
 }
 
-.footer > a {
+.footer > p {
   align-items: center;
+  margin: 10px;
 }
