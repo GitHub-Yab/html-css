@@ -1,5 +1,6 @@
 .user-component {
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .user-component,
@@ -11,19 +12,8 @@
 .user-component__avatar {
   width: 70px;
   height: 70px;
-  border-radius: 30px;
+  border-radius: 40%;
   margin-right: 20px;
-}
-
-.user-component__title {
-  font-weight: 600;
-  font-size: 22px;
-}
-
-.user-component__subtitle {
-  margin-top: 8px;
-  font-size: 17px;
-  color: rgba(0, 0, 0, 0.5);
 }
 
 .user-component__avatar--xl {
@@ -34,15 +24,25 @@
 .user-component__avatar--sm {
   width: 60px;
   height: 60px;
-  border-radius: 25px;
+}
+
+.user-component__title {
+  font-weight: 600;
+  font-size: 22px;
 }
 
 .user-component__title--not-bold {
-  font-weight: 400;
+  font-weight: inherit;
+}
+
+.user-component__subtitle {
+  margin-top: 5px;
+  font-size: 17px;
+  color: var(--gray);
 }
 
 .user-component__column:last-child {
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--gray);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -51,4 +51,22 @@
 .user-component__time {
   margin-bottom: 10px;
   display: block;
+}
+
+.user-component__subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  gap: 3px;
+  position: relative;
+}
+
+.user-component__subtitle > span {
+  width: 12px;
+  border: 1px solid;
+  border-radius: 50%;
+  color: tomato;
+  font-size: 12px;
+  text-align: center;
 }
