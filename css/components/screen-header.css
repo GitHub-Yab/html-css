@@ -1,18 +1,14 @@
 .screen-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: var(--horizontal-space);
+  align-items: center;
   margin-bottom: 15px;
 }
 
 .screen-header__title {
   font-size: 32px;
   font-weight: 600;
-}
-
-.screen-header__icons span {
-  margin-left: 25px;
 }
 
 @keyframes rotateCog {
@@ -24,6 +20,10 @@
   }
 }
 
-.screen-header__icons .fa-cog:hover {
+.screen-header__icons .fa-gear:hover {
   animation: rotateCog 1s linear infinite;
+}
+
+.screen-header__icons span {
+  margin-left: 25px;
 }
